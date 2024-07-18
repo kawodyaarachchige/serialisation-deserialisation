@@ -21,10 +21,10 @@ Java implements serialization via the Serializable interface, marking eligible c
 
 Deserialization involves reading the byte stream and reconstructing the object, field by field, according to the information encapsulated within the stream. Successful deserialization requires the class definition of the serialized object to be present in the JVM performing the operation.
 
-It's important to remember that serialization isn't enabled by default for all objects. Classes must explicitly declare the Serializable interface to allow their instances to be serialized. Developers also gain control over the serialization process through methods such as writeObject() and readObject(), enabling customization of serialization and deserialization practices.
+It's important to remember that serialization isn't enabled by default for all objects. Classes must explicitly declare the Serializable interface to allow their instances to be serialized. Developers also gain control over the serialization process through methods such as `writeObject()` and `readObject()`, enabling customization of serialization and deserialization practices.
 
 ### Integration of JSON with YAsson's JsonbBuilder
-YAsson's JsonbBuilder provides a straightforward API for JSON binding, leveraging annotations to map Java objects to JSON and JSON to Java objects. This integration enhances the serialization and deserialization mechanism by offering a more readable and structured format, especially beneficial for web APIs and data storage.
+YAsson's `JsonbBuilder` provides a straightforward API for JSON binding, leveraging annotations to map Java objects to JSON and JSON to Java objects. This integration enhances the serialization and deserialization mechanism by offering a more readable and structured format, especially beneficial for web APIs and data storage.
 
 ## Summry
 
